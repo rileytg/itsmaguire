@@ -1,10 +1,43 @@
 <!doctype html>
 <html>
 <head>
-<title>It's Maguire!</title>
+  <title>It's Maguire!</title>
+  <link href="styles/reset.css" rel="stylesheet"/>
+  <link href="styles/holo.css" rel="stylesheet"/>
+  <link href="styles/main.css" rel="stylesheet"/>
+  <script src="bower_components/modernizr/modernizr.js"></script>
+
 </head>
 <body>
-<h1>It's Maguire!</h1>
-<img src="/m.gif"/>
+
+<!--<div class="center">-->
+  <!---->
+<!--</div>-->
+
+
+<div id="world">
+  <div id="room">
+    <!-- The back wall which holds our content -->
+    <div id="back">
+      <!--<h1 style="position: absolute">It's Maguire!</h1>-->
+      <img src="m.gif"/>
+    </div>
+
+    <!-- The translucent front wall -->
+    <div id="front"></div>
+
+    <!-- The remaining walls of the box -->
+    <div id="wall-left"></div>
+    <div id="wall-right"></div>
+    <div id="wall-top"></div>
+    <div id="wall-bottom"></div>
+
+    <!-- A plane below the box which is used to simulate a shadow -->
+    <div id="shadow"></div>
+  </div>
+</div>
+
+<script src="js/holobox.js"></script>
+
 </body>
 </html>
