@@ -54,10 +54,8 @@ var Holobox = (function () {
         // Capture mouse movement for PC's
         addEventListener('mousemove', onMouseMove, false);
 
-        if (Modernizr.hasEvent('devicemotion')) {
+        if (Modernizr.touch) {
             addEventListener('devicemotion', onMotionChange, false);
-        }
-        if (Modernizr.hasEvent('orientationchange')) {
             addEventListener('orientationchange', onOrientationChange, false);
         }
 
